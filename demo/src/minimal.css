@@ -1,0 +1,119 @@
+/* O tema legado continua disponível; esta camada organiza a V0.6. */
+.nexus.minimal { --pink:#b99af8; --violet:#9674de; --cyan:#b99af8; --line:#34323e; background:#151519; color:#e4e1e9; height:100dvh; min-height:0; }
+.minimal .ambient,.minimal .scan-lines,.minimal .rail-decoration,.minimal .rail-label,.minimal .logo-subtitle,.minimal .rail-footer,.minimal .bottomline,.minimal .heading-numeral,.minimal .chat-intro,.minimal .file-breadcrumb,.minimal .tabs-tools,.minimal .editor-toolbar-info { display:none; }
+.minimal .rail { width:154px; flex-basis:154px; padding:26px 10px 14px; background:#19181f; border-color:var(--line); box-shadow:none; height:100%; }
+.minimal .rail:before { height:2px; background:#9674de; box-shadow:none; }
+.minimal .logo { padding:8px 4px 28px; text-align:left; }
+.minimal .logo-word { font:700 22px/1.2 'Segoe UI',sans-serif; letter-spacing:-1px; text-shadow:none; }
+.minimal .logo-word span { display:inline; font:inherit; margin-left:5px; letter-spacing:-1px; color:var(--pink); text-shadow:none; }
+.minimal .rail nav { gap:5px; }
+.minimal .rail nav button { font:500 11px 'Segoe UI',sans-serif; letter-spacing:0; padding:0 10px; border-radius:8px; gap:9px; }
+.minimal .rail nav svg { filter:none; color:#a59ab6; }
+.minimal .rail nav button.nav-active { background:#a689de19; border:1px solid #a689de30; color:#d8c6ff; box-shadow:none; text-shadow:none; }
+.minimal .rail-status { margin-top:auto; background:transparent; border:0; box-shadow:none; padding:20px 5px 0; }
+.minimal .rail-status .micro-label { display:none; }
+.minimal .rail-status small { overflow-wrap:anywhere; line-height:1.5; }
+.minimal .status-line { font-size:9px; line-height:1.6; }
+.minimal .workbench { padding:0 16px 16px; gap:0; }
+.minimal .topline { height:55px; flex-basis:55px; background:transparent; border:0; clip-path:none; padding:0; }
+.minimal .topline-id { font:500 11px 'Segoe UI',sans-serif; color:#bcb5c8; letter-spacing:0; }
+.minimal .orb,.minimal .local-chip { display:none; }
+.minimal .topline-right { gap:10px; }
+.minimal .layout-controls { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:0 0 14px; }
+.minimal .layout-controls button { display:flex; align-items:center; justify-content:center; gap:6px; background:transparent; border:1px solid #38333f; border-radius:8px; padding:8px 12px; color:#bcb6c8; font-size:12px; min-height:36px; }
+.minimal .view-modes { display:flex; gap:4px; }
+.minimal .layout-controls button[aria-pressed=true] { background:#a281d923; color:#e0d0ff; border-color:#776092; }
+.minimal .workspace { display:flex; gap:0; min-height:0; overflow:hidden; }
+.minimal .panel-frame { background:#19191f; border:1px solid #34323c; border-radius:12px; box-shadow:none; }
+.minimal .panel-frame:after { display:none; }
+.minimal .explorer { flex:0 0 var(--explorer-width); width:var(--explorer-width); overflow:hidden; }
+.minimal .editor-panel { flex:1 1 0; min-width:0; overflow:hidden; }
+.minimal .chat-panel { flex:0 0 min(var(--chat-width),48%); width:min(var(--chat-width),48%); overflow:hidden; }
+.minimal .panel-heading { background:transparent; color:#cbb9ee; text-shadow:none; border-color:var(--line); font:600 12px 'Segoe UI',sans-serif; letter-spacing:0; min-height:48px; }
+.minimal .panel-heading small { max-width:150px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.minimal .resize-handle { flex:0 0 10px; touch-action:none; position:relative; cursor:col-resize; outline-offset:-2px; }
+.minimal .resize-handle:after { content:''; position:absolute; top:35%; bottom:35%; left:4px; width:2px; border-radius:3px; background:#655475; }
+.minimal .resize-handle:hover:after,.minimal .resize-handle:focus-visible:after { background:var(--pink); }
+.minimal .resize-y { flex:0 0 8px; cursor:row-resize; }
+.minimal .resize-y:after { left:40%; right:40%; top:3px; bottom:auto; width:auto; height:2px; }
+.minimal .explorer-hidden .explorer,.minimal .explorer-hidden .explorer-resize { display:none; }
+.minimal .focus-chat .editor-panel,.minimal .focus-chat .chat-resize { display:none; }
+.minimal .focus-editor .chat-panel,.minimal .focus-editor .chat-resize { display:none; }
+.minimal .focus-chat .chat-panel { flex:1; width:auto; }
+.minimal .import-btn,.minimal .export-btn { background:#a080d511; border-color:#51425f; color:#cdbde5; border-radius:7px; letter-spacing:0; font:500 11px 'Segoe UI',sans-serif; padding:9px; }
+.minimal .global-search small { display:none; }
+.minimal .file-search,.minimal .global-search-row { background:#202026; border-color:#3b3645; border-radius:7px; }
+.minimal .tree-name { font:12px 'Segoe UI',sans-serif; }
+.minimal .tree-item { min-height:32px; }
+.minimal .tree-item.active { border-left-color:var(--pink); background:#a080d51a; }
+.minimal .editor-tabs,.minimal .editor-tab,.minimal .editor-tab.chosen { background:#1e1d25; border-color:#3b3448; }
+.minimal .editor-tab.chosen { border-bottom-color:var(--pink); }
+.minimal .editor-toolbar { padding:8px; background:transparent; flex-wrap:wrap; height:auto; min-height:42px; }
+.minimal .editor-toolbar-actions { flex-wrap:wrap; justify-content:flex-end; gap:5px; }
+.minimal .editor-toolbar button { font:500 10px 'Segoe UI',sans-serif; letter-spacing:0; border-radius:6px; padding:7px; }
+.minimal .code-area { background:#19191f; }
+.minimal .editor-status { font-size:8px; overflow:hidden; background:#19191f; }
+.minimal .console { height:var(--console-height); flex-basis:var(--console-height); max-height:45%; background:#18171e; border-top:1px solid var(--line); }
+.minimal .console.collapsed { flex:0 0 35px; height:35px; }
+.minimal .console-tools>span { display:none; }
+.minimal .console-heading { overflow-x:auto; flex-shrink:0; }
+.minimal .editor-empty { background:none; padding:24px; }
+.minimal .empty-ghost,.minimal .eyebrow { display:none; }
+.minimal .editor-empty h2 { font:600 25px/1.4 'Segoe UI',sans-serif; text-shadow:none; }
+.minimal .editor-empty em { color:var(--pink); }
+.minimal .chat-messages { padding:24px 20px; }
+.minimal .chat-message { gap:0; margin-bottom:26px; }
+.minimal .message-avatar,.minimal .msg-name { display:none; }
+.minimal .message-body { width:100%; min-width:0; }
+.minimal .message-bubble { background:transparent; border:0; padding:0; box-shadow:none; font-size:14px; line-height:1.75; overflow-wrap:anywhere; }
+.minimal .user .message-body { margin-left:12%; }
+.minimal .user .message-bubble { background:#30283e; border-radius:16px; padding:12px 16px; }
+.minimal .performance-info { opacity:.65; font-size:9px; }
+.minimal .composer { margin:0 auto; width:100%; max-width:860px; padding:14px; background:transparent; border:0; }
+.minimal .composer-row { border:1px solid #51435e; border-radius:16px; padding:10px; background:#24212c; }
+.minimal .composer textarea { background:transparent; font:14px/1.5 'Segoe UI',sans-serif; min-height:65px; }
+.minimal .composer-row>button { border-radius:10px; background:#a080d5; color:#fff; box-shadow:none; }
+.minimal .prompt-chips { justify-content:center; flex-wrap:wrap; }
+.minimal .prompt-chips button { border-radius:16px; background:transparent; border-color:#51435e; color:#bfb1d5; font-size:9px; }
+.minimal .dot,.minimal .data-dot { box-shadow:none; }
+.minimal.with-glow .panel-frame { box-shadow:0 0 12px #a080d510; }
+.minimal .modal-screen { padding:16px; }
+.minimal .settings-modal,.minimal .review-modal { max-width:100%; max-height:90dvh; }
+@media (max-width:1200px) {
+ .minimal .rail { width:62px; flex-basis:62px; padding:20px 7px; }
+ .minimal .logo-word { font-size:0; text-align:center; }
+ .minimal .logo-word:before { content:'N'; font-size:24px; color:var(--pink); }
+ .minimal .logo-word span,.minimal .rail-status { display:none; }
+ .minimal .rail nav button { font-size:0; padding:0; justify-content:center; gap:0; }
+ .minimal .rail nav button svg { width:20px; height:20px; flex-shrink:0; }
+ .minimal .explorer { flex-basis:min(var(--explorer-width),220px); width:220px; }
+ .minimal .chat-panel { flex-basis:40%; width:40%; }
+ .minimal .editor-status>div:first-child { font-size:0; }
+}
+@media (max-width:900px) {
+ .minimal .workbench { padding:0 10px 10px; }
+ .minimal .workspace>.panel-frame,.minimal .workspace>.resize-handle { display:none; }
+ .minimal .workspace.mobile-chat>.chat-panel,.minimal .workspace.mobile-editor>.editor-panel,.minimal .workspace.mobile-files>.explorer { display:flex; flex:1; width:100%; }
+ .minimal .topline-id { font-size:10px; }
+ .minimal .topline-right .theme-switch,.minimal .top-version { display:none; }
+ .minimal .layout-controls { flex-wrap:wrap; }
+ .minimal .layout-controls button { padding:8px; font-size:11px; }
+ .minimal .view-modes button:nth-child(2) { display:none; }
+ .minimal .chat-messages { padding:20px 16px; }
+ .minimal .editor-toolbar-actions { justify-content:flex-start; }
+ .minimal .setting-row { flex-wrap:wrap; gap:8px; }
+}
+@media (prefers-reduced-motion:reduce) { .minimal *, .minimal *:before,.minimal *:after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
+.minimal .workbench { min-height:0; overflow:hidden; }
+.minimal .chat-panel { min-height:0; }
+.minimal .chat-messages { min-height:0; max-height:none; }
+.minimal .editor-toolbar-actions button svg { display:inline-block; }
+.minimal .chat-message { content-visibility:auto; contain-intrinsic-size:auto 120px; }
+.minimal .panel-heading.magenta { background:transparent; color:#cbb9ee; text-shadow:none; border-color:var(--line); }
+.minimal .explorer-actions { padding-bottom:7px; }
+.minimal .theme-switch { letter-spacing:0; border-radius:6px; }
+.minimal .ai-glyph { border-color:#574568; color:var(--pink); }
+.demo-banner { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 14px; margin:0 0 12px; background:#a080d514; border:1px solid #a080d536; border-radius:10px; color:#c4b7d7; font:12px/1.5 'Segoe UI',sans-serif; }
+.demo-banner strong { color:#dbc4ff; margin-right:10px; font-size:10px; letter-spacing:1px; }
+.demo-banner button { border:0; background:transparent; color:#dac5ff; white-space:nowrap; font-size:11px; }
+@media(max-width:600px) { .demo-banner { flex-wrap:wrap; font-size:11px; } }

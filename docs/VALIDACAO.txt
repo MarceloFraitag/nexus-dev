@@ -1,0 +1,5 @@
+Backend: 18 passed, 2 warnings.
+Frontend: tsc -b e vite build aprovados.
+Aviso: chunk do Monaco maior que 500 KB, carregado sob demanda.
+UI automatizada: não executada, instalação do Chromium falhou.
+Ollama real: não disponível neste ambiente.
